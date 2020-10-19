@@ -34,3 +34,22 @@ const findDuplicates = (arr) => {
 };
 
 console.log(findDuplicates([3, 4, 4, 5, 5]));
+
+const findDuplicate = (arr) => {
+  let i = 0;
+
+  while (i < arr.length) {
+    if (arr[i] !== i + 1) {
+      j = arr[i] - 1;
+      if (arr[i] !== arr[j]) {
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+      } else {
+        return arr[i];
+      }
+    } else {
+      i += 1;
+    }
+  }
+};
+
+console.log(`find the duplicate number ${findDuplicate([1, 4, 4, 3, 2])}`);
