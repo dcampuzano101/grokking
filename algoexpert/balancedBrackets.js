@@ -9,8 +9,6 @@ const balancedBrackets = (string) => {
 
   for (let i = 0; i < string.length; i++) {
     let curr = string[i];
-    // console.log(bracketArr.indexOf(curr) === -1);
-    // if (bracketArr.indexOf(curr) === -1) return false;
 
     if (curr in brackets) {
       stack.push(curr);
@@ -29,3 +27,5 @@ console.log(balancedBrackets("([])(){}(())()()"));
 console.log(balancedBrackets("()[]{}{"));
 
 console.log(balancedBrackets("(((((({{{{{[[[[[([)])]]]]]}}}}}))))))"));
+
+console.log(balancedBrackets("()[]{}{"));

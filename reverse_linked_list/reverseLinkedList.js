@@ -9,3 +9,5 @@ const reverseLinkedList = (head) => {
   }
   return prev;
 };
+
+console.log(reverseLinkedList(node));
