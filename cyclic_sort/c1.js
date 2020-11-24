@@ -44,3 +44,4 @@ const corruptPair = (arr) => {
 };
 
 console.log(corruptPair([3, 1, 2, 5, 2]));
+console.log(corruptPair([3, 1, 2, 2, 1]));
