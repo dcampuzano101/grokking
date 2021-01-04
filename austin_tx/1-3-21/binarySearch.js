@@ -12,7 +12,7 @@ const binarySearch = (array, target) => {
   let midPoint = Math.floor(array.length / 2);
 
   if (target > array[midPoint]) {
-    const subResult = binarySearch(array.slice(midPoint), target);
+    const subResult = binarySearch(array.slice(midPoint + 1), target);
     return subResult === -1 ? -1 : subResult + midPoint + 1;
   } else if (target < array[midPoint]) {
     return binarySearch(array.slice(0, midPoint), target);
