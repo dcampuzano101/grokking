@@ -1,20 +1,29 @@
-const threeNumberSum = (array, targetSum) => {
-  // input an array of unsorted numbers, and a targetSum
-  // output an array of arrays that sum to the targetSum
+const smallestDifference = (arrayOne, arrayTwo) => {
+  let smallest = Infinity;
+  let current = Infinity;
+  arrayOne.sort((a, b) => a - b);
+  arrayTwo.sort((a, b) => a - b);
+  let indexOne = 0;
+  let indexTwo = 0;
+  let smallestPair;
+  while (indexOne < arrayOne.length && indexTwo < arrayTwo.length) {
+    let first = arrayOne[indexOne];
+    let second = arrayTwo[indexTwo];
 
-  //sort the array, therefore we know which indexes to increment/decrement
-  array.sort((a, b) => a - b);
-  const triplets = [];
-  //loop through the array, since we are keeping track of three indexes we want to ensure we
-  //do not hit the end of the array
-  for (let i = 0; i < array.length - 2; i++) {
-    let left = i + 1;
-    let right = array.length - 1;
+    if (first < second) {
+      current = second - first;
+      indexOne++;
+    } else if (second < first) {
+      current = first - second;
+      indexTwo++;
+    } else {
+      return [first, second];
+    }
 
-    while (left < right) {
-      let currentSum = array[i] + array[left] + array[right];
-      if (currentSum === targetSum) {
-      }
+    if (smallest > current) {
+      smallest = current;
+      smallestPair = [first, second];
     }
   }
+  return smallestPair;
 };
