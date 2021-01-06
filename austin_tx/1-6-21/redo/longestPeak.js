@@ -1,6 +1,7 @@
 const longestPeak = (array) => {
   let maxPeak = 0;
   let i = 1;
+
   while (i < array.length - 1) {
     const isPeak = array[i - 1] < array[i] && array[i + 1] < array[i];
 
@@ -14,6 +15,7 @@ const longestPeak = (array) => {
     while (leftIndex >= 0 && array[leftIndex] < array[leftIndex + 1]) {
       leftIndex--;
     }
+
     let rightIndex = i + 2;
     while (
       rightIndex < array.length &&
@@ -22,8 +24,8 @@ const longestPeak = (array) => {
       rightIndex++;
     }
 
-    const currentPeakLength = rightIndex - leftIndex - 1;
-    maxPeak = Math.max(maxPeak, currentPeakLength);
+    let currentPeak = rightIndex - leftIndex - 1;
+    maxPeak = Math.max(maxPeak, currentPeak);
     i = rightIndex;
   }
   return maxPeak;
