@@ -1,13 +1,15 @@
-const isPalindrome = (arr, target) => {
-  let i = 0;
-  let j = arr.length - 1;
-  while (i < j) {
-    if (arr[i] === arr[j]) {
-      i++;
-      j--;
-    } else {
-      return false;
-    }
-  }
-  return true;
-};
+/*
+
+Write a function that takes in a non-empty string and that returns a boolean
+representing whether the string is a palindrome.
+
+
+A palindrome is defined as a string that's written the same forward and
+backward. Note that single-character strings are palindromes.
+
+Sample Input
+  string = "abcdcba"
+Sample Output
+  true // it's written the same forward and backward
+*/
+const isPalindrome = (arr, target) => {};
