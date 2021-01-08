@@ -3,13 +3,7 @@ const mergeFiles = require("merge-files");
 const algos = "../completedProblemsUnsolved/";
 
 const fileNames = fs.readdirSync(algos);
-const outputPath = __dirname + "/result.js";
-
-const result = new Set();
-
-// console.log(moveElement);
-// // status: true or false
-// const status = mergeFiles(result, outputPath);
+const outputPath = __dirname + "/test.js";
 
 const randomProblemGenerator = (fileNames) => {
   // let result = new Set();
