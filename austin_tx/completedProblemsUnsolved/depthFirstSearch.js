@@ -1,5 +1,4 @@
 /*
-
   You're given a Node class that has a name and an
   array of optional children nodes. When put together, nodes form
   an acyclic tree-like structure.
@@ -34,3 +33,5 @@ Sample Output
 */
 
 const depthFirstSearch = (array) => {};
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
