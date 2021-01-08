@@ -25,28 +25,5 @@ const randomProblemGenerator = (fileNames) => {
 
   return Object.keys(result);
 };
-let randomProbs = randomProblemGenerator(fileNames);
-// console.log(randomProbs);
-mergeFiles(randomProbs, outputPath);
 
-// const createDir = (dirPath) => {
-//   fs.mkdirSync(process.cwd() + dirPath, { recursive: true }, (error) => {
-//     if (error) {
-//       console.error(`An error occurred: ${error}`);
-//     } else {
-//       console.log(`Directory successfully  created!`);
-//     }
-//   });
-// };
-
-// const createFile = (filePath, fileContent) => {
-//   fs.writeFile(filePath, fileContent, (error) => {
-//     if (error) {
-//       console.error(`An error occurred: ${error}`);
-//     } else {
-//       console.log(`File successfully created!`);
-//     }
-//   });
-// };
-
-// const completedProblems = [];
+mergeFiles(randomProblemGenerator(fileNames), outputPath);
