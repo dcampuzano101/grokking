@@ -20,4 +20,4 @@ true
 
 */
 
-const arrayOfProducts = (array) => {};
+const isMonotonic = (array) => {};
