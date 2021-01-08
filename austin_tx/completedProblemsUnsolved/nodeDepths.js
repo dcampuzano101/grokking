@@ -1,17 +1,16 @@
 /*
+The distance between a node in a Binary Tree and the tree's root is called the
+node's depth.
 
-  The distance between a node in a Binary Tree and the tree's root is called the
-  node's depth.
+Write a function that takes in a Binary Tree and returns the sum of its nodes'
+depths.
 
-  Write a function that takes in a Binary Tree and returns the sum of its nodes'
-  depths.
+Each BinaryTree node has an integer value, a
+left child node, and a right child node. Children
+nodes can either be BinaryTree nodes themselves or
+None / null.
 
-  Each BinaryTree node has an integer value, a
-  left child node, and a right child node. Children
-  nodes can either be BinaryTree nodes themselves or
-  None / null.
-
-  Sample Input
+Sample Input
 
 tree =    1
        /     \
@@ -22,8 +21,7 @@ tree =    1
 8     9
 
 Sample Output
-
-16
+  16
  The depth of the node with value 2 is 1.
  The depth of the node with value 3 is 1.
  The depth of the node with value 4 is 2.
