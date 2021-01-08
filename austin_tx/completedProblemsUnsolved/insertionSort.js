@@ -1,21 +1,17 @@
-const insertionSort = (array) => {
-  // we split the input array into two parts, the first part is always sorted,
-  // and begins with one element
-  // we instantiate two pointers, i = 1, j = 1
-  // while j > 0 && arr[j] < arr[j-1]
-  // we swap the elemnts and decrement j
-  // continue iterating through the array, if we find an element out of place we run the swap
+/*
+Write a function that takes in an array of integers and returns a sorted
+version of that array. Use the Insertion Sort algorithm to sort the array.
 
-  for (let i = 1; i < array.length; i++) {
-    let j = i;
-    while (j > 0 && array[j] < array[j - 1]) {
-      let swap = array[j];
-      array[j] = array[j - 1];
-      array[j - 1] = swap;
-      j--;
-    }
-  }
-  return array;
-};
+If you're unfamiliar with Insertion Sort, we recommend watching the Conceptual
+Overview section of this question's video explanation before starting to code.
+
+Sample Input
+  array = [8, 5, 2, 9, 5, 6, 3]
+
+Sample Output
+  [2, 3, 5, 5, 6, 8, 9]
+*/
+
+const insertionSort = (array) => {};
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
